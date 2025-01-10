@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 40px 0;
+}
+
+header.main-header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header.main-header p {
+    font-size: 1.1rem;
+}
+
+nav.main-nav {
+    background-color: #34495e;
+}
+
+nav.main-nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav.main-nav li {
+    margin: 0 15px;
+}
+
+nav.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav.main-nav a:hover {
+    text-decoration: underline;
+}
+
+nav.main-nav .active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section h2, section h3, section h4 {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 20px 0;
+}
+
+code {
+    color: #e74c3c;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+ul {
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+footer.main-footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer.main-footer p {
+    font-size: 1rem;
+}
+
+/* Table of Contents Styles */
+.table-of-contents {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-of-contents h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.table-of-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.table-of-contents li {
+    margin-bottom: 10px;
+}
+
+.table-of-contents a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.table-of-contents a:hover {
+    background-color: #f0f8ff;
+    color: #2980b9;
+}
+
+/* Additional Section Styles */
+section h2#what-is-html,
+section h3#basic-structure,
+section h3#html-tags,
+section h3#html-attributes,
+section h3#adding-links-images,
+section h3#html-lists,
+section h3#html-tables,
+section h3#html-forms,
+section h3#html-semantics,
+section h3#test-yourself {
+    scroll-margin-top: 80px;
+}
+
+ul li a {
+    color: #3498db;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+
+table tr.highlight {
+    background-color: #f0f8ff;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+

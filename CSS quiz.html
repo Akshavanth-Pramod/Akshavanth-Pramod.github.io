@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz</title>
+    <link rel="stylesheet" href="CSS quiz.css">
+    <script src="CSS quiz.js" defer></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>CSS Quiz</h1>
+        <form onsubmit="checkAnswers(event)">
+            <div class="question" data-question="q1">
+                <p>1. What does CSS stand for?</p>
+                <label><input type="radio" name="q1" value="a"> Cascading Style Sheets</label><br>
+                <label><input type="radio" name="q1" value="b"> Creative Style Syntax</label><br>
+                <label><input type="radio" name="q1" value="c"> Compact Style Structure</label><br>
+                <label><input type="radio" name="q1" value="d"> Computer Styling System</label>
+            </div>
+
+            <div class="question" data-question="q2">
+                <p>2. Which CSS selector targets an element with the ID "header"?</p>
+                <label><input type="radio" name="q2" value="a"> .header</label><br>
+                <label><input type="radio" name="q2" value="b"> #header</label><br>
+                <label><input type="radio" name="q2" value="c"> header</label><br>
+                <label><input type="radio" name="q2" value="d"> *header</label>
+            </div>
+
+            <div class="question" data-question="q3">
+                <p>3. Which property is used to add space inside an element, but before the border?</p>
+                <label><input type="radio" name="q3" value="a"> margin</label><br>
+                <label><input type="radio" name="q3" value="b"> padding</label><br>
+                <label><input type="radio" name="q3" value="c"> border</label><br>
+                <label><input type="radio" name="q3" value="d"> spacing</label>
+            </div>
+
+            <div class="question" data-question="q4">
+                <p>4. What is the CSS Box Model?</p>
+                <label><input type="radio" name="q4" value="a"> Padding, Margin, Content, Shadow</label><br>
+                <label><input type="radio" name="q4" value="b"> Content, Padding, Border, Margin</label><br>
+                <label><input type="radio" name="q4" value="c"> Border, Content, Background, Margin</label><br>
+                <label><input type="radio" name="q4" value="d"> Content, Shadow, Padding, Margin</label>
+            </div>
+
+            <div class="question" data-question="q5">
+                <p>5. What does the following CSS code do?<br>
+                <code>@media (max-width: 600px) { body { background-color: lightblue; } }</code></p>
+                <label><input type="radio" name="q5" value="a"> Sets the background to lightblue for all screen sizes</label><br>
+                <label><input type="radio" name="q5" value="b"> Applies lightblue background for screens smaller than 600px wide</label><br>
+                <label><input type="radio" name="q5" value="c"> Hides the background for screens wider than 600px</label><br>
+                <label><input type="radio" name="q5" value="d"> Changes text color on small screens</label>
+            </div>
+
+            <div class="question" data-question="q6">
+                <p>6. Which CSS property is used to make text bold?</p>
+                <label><input type="radio" name="q6" value="a"> text-style</label><br>
+                <label><input type="radio" name="q6" value="b"> font-style</label><br>
+                <label><input type="radio" name="q6" value="c"> font-weight</label><br>
+                <label><input type="radio" name="q6" value="d"> text-transform</label>
+            </div>
+
+            <div class="question" data-question="q7">
+                <p>7. What is the effect of this CSS rule?<br>
+                <code>button:hover { background-color: #45a049; }</code></p>
+                <label><input type="radio" name="q7" value="a"> Changes the button color when clicked</label><br>
+                <label><input type="radio" name="q7" value="b"> Changes the button color when hovered over</label><br>
+                <label><input type="radio" name="q7" value="c"> Changes the text color on hover</label><br>
+                <label><input type="radio" name="q7" value="d"> Makes the button larger</label>
+            </div>
+
+            <div class="question" data-question="q8">
+                <p>8. Which layout system is ideal for creating two-dimensional designs in CSS?</p>
+                <label><input type="radio" name="q8" value="a"> Flexbox</label><br>
+                <label><input type="radio" name="q8" value="b"> Grid</label><br>
+                <label><input type="radio" name="q8" value="c"> Float</label><br>
+                <label><input type="radio" name="q8" value="d"> Position</label>
+            </div>
+
+            <div class="question" data-question="q9">
+                <p>9. Which selector applies a style to multiple types of elements?</p>
+                <label><input type="radio" name="q9" value="a"> Group Selector</label><br>
+                <label><input type="radio" name="q9" value="b"> Element Selector</label><br>
+                <label><input type="radio" name="q9" value="c"> ID Selector</label><br>
+                <label><input type="radio" name="q9" value="d"> Class Selector</label>
+            </div>
+
+            <div class="question" data-question="q10">
+                <p>10. Which property ensures an image is responsive?</p>
+                <label><input type="radio" name="q10" value="a"> max-width</label><br>
+                <label><input type="radio" name="q10" value="b"> height</label><br>
+                <label><input type="radio" name="q10" value="c"> border-radius</label><br>
+                <label><input type="radio" name="q10" value="d"> margin</label>
+            </div>
+
+            <div class="question" data-question="q11">
+                <p>11. What does the "position" property control?</p>
+                <label><input type="radio" name="q11" value="a"> Text alignment</label><br>
+                <label><input type="radio" name="q11" value="b"> Background color</label><br>
+                <label><input type="radio" name="q11" value="c"> Element's placement on the page</label><br>
+                <label><input type="radio" name="q11" value="d"> Font size</label>
+            </div>
+
+            <div class="question" data-question="q12">
+                <p>12. Which unit is relative to the font size of the root element?</p>
+                <label><input type="radio" name="q12" value="a"> em</label><br>
+                <label><input type="radio" name="q12" value="b"> rem</label><br>
+                <label><input type="radio" name="q12" value="c"> px</label><br>
+                <label><input type="radio" name="q12" value="d"> %</label>
+            </div>
+
+            <div class="question" data-question="q13">
+                <p>13. What happens if you use a class and an ID with the same name?</p>
+                <label><input type="radio" name="q13" value="a"> The class always overrides the ID</label><br>
+                <label><input type="radio" name="q13" value="b"> The ID always overrides the class</label><br>
+                <label><input type="radio" name="q13" value="c"> Both apply with equal weight</label><br>
+                <label><input type="radio" name="q13" value="d"> None apply</label>
+            </div>
+
+            <div class="question" data-question="q14">
+                <p>14. What does "border-radius: 50%;" do to an element?</p>
+                <label><input type="radio" name="q14" value="a"> Makes it rounded</label><br>
+                <label><input type="radio" name="q14" value="b"> Gives it a full circular shape</label><br>
+                <label><input type="radio" name="q14" value="c"> Removes the border</label><br>
+                <label><input type="radio" name="q14" value="d"> Increases the size</label>
+            </div>
+
+            <div class="question" data-question="q15">
+                <p>15. What is the purpose of a "media query"?</p>
+                <label><input type="radio" name="q15" value="a"> To control the layout of printed pages</label><br>
+                <label><input type="radio" name="q15" value="b"> To apply styles based on device type or size</label><br>
+                <label><input type="radio" name="q15" value="c"> To debug stylesheets</label><br>
+                <label><input type="radio" name="q15" value="d"> To load external stylesheets</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div id="result"></div>
+
+    
+    </div>
+</body>
+</html>

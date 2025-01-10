@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="CSS page.css">
+<script src="CSS page.js" defer></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling - WebDev Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h2, h3 {
+            font-size: 20px; /* Consistent font size for subtitles */
+        }
+        p, ul, pre, li {
+            font-size: 16px; /* Consistent font size for body text */
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>CSS Styling</h1>
+            <p>Learn how to style your websites using CSS for a visually appealing design.</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="HTML page.html">HTML Basics</a></li>
+                <li><a href="CSS page.html" class="active">CSS Styling</a></li>
+                <li><a href="JavaScript page.html">JavaScript Essentials</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+             <h2 style="font-size: 25px;">Table of Contents</h2>
+            <ul>
+                <li><a href="#what-is-css">What is CSS?</a></li>
+                <li><a href="#basic-syntax">Basic CSS Syntax</a></li>
+                <li><a href="#css-selectors">CSS Selectors</a></li>
+                <li><a href="#box-model">CSS Box Model</a></li>
+                <li><a href="#adding-styles">Adding Styles to HTML</a></li>
+                <li><a href="#styling-images">Styling Images</a></li>
+                <li><a href="#styling-example">Example: Styling a Button</a></li>
+                <li><a href="#css-layout">CSS Layout Techniques</a></li>
+                <li><a href="#responsive-design">Responsive Design with CSS</a></li>
+                <li><a href="#test-yourself">Test Yourself</a></li>
+            </ul>
+
+            <h2 id="what-is-css">What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is a style sheet language used to control the appearance of HTML elements on a webpage. It lets you apply styles such as colors, fonts, spacing, and layout to your webpage.</p>
+
+            <h3 id="basic-syntax">Basic CSS Syntax</h3>
+            <pre>
+<code>
+/* This is a CSS comment */
+selector {
+    property: value;
+}
+</code>
+            </pre>
+
+            <h3 id="css-selectors">CSS Selectors</h3>
+            <p>CSS selectors are used to select the HTML elements you want to style. Here are some common selectors:</p>
+            <ul>
+                <li><strong>Element Selector</strong>: Selects all elements of a specific type (e.g., <code>p</code> for paragraphs).</li>
+                <li><strong>Class Selector</strong>: Selects elements with a specific class (e.g., <code>.button</code> for elements with the class "button").</li>
+                <li><strong>ID Selector</strong>: Selects an element with a specific ID (e.g., <code>#header</code> for the element with ID "header").</li>
+                <li><strong>Group Selector</strong>: Applies styles to multiple selectors (e.g., <code>h1, h2, p</code>).</li>
+            </ul>
+
+            <h2 id="box-model">CSS Box Model</h2>
+            <p>The CSS Box Model is a fundamental concept used to understand spacing and layout:</p>
+            <ul>
+                <li><strong>Content:</strong> The actual content inside the box (e.g., text, image).</li>
+                <li><strong>Padding:</strong> Space between the content and the border.</li>
+                <li><strong>Border:</strong> The edge surrounding the padding.</li>
+                <li><strong>Margin:</strong> Space between the element and its neighbors.</li>
+            </ul>
+
+            <img src="CSS Box Model.jpg" alt="Box Model" width="700" height="300">
+            <div style="height: 20px;"></div>
+
+            <h3 id="adding-styles">Adding Styles to HTML</h3>
+            <p>Here's how to add CSS to an HTML page:</p>
+            <pre>
+<code>
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+</code>
+            </pre>
+
+            <h3 id="styling-images">Styling Images</h3>
+            <p>CSS allows you to style images to make them visually appealing and fit your design:</p>
+            <pre>
+<code>
+img {
+    max-width: 50%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    border: 2px solid #ccc; /* Adds a border around the image */
+    border-radius: 10px; /* Rounds the corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+
+</code>
+
+            </pre>
+             <div style="height: 20px;"></div>
+            <p>Example of the styled image using the above code:</p>
+            <img src="Styled image.jpg" alt="Styled Image" style="max-width: 50%; height: auto; border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+
+                <div style="height: 20px;"></div>
+
+            <h3 id="styling-example">Example: Styling a Button</h3>
+            <pre>
+
+
+<code>
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+</code>
+            </pre>
+
+            <h3 id="css-layout">CSS Layout Techniques</h3>
+            <p>CSS provides various layout techniques for structuring a webpage:</p>
+            <ul>
+                <li><strong>Flexbox</strong>: A layout model for aligning items in a container.</li>
+                <li><strong>Grid</strong>: A powerful layout system for creating two-dimensional designs.</li>
+                <li><strong>Float</strong>: An older method for positioning elements.</li>
+                <li><strong>Position</strong>: Specifies the positioning method for an element (e.g., relative, absolute, fixed).</li>
+            </ul>
+
+            <h3 id="responsive-design">Responsive Design with CSS</h3>
+            <p>Responsive design ensures your webpage looks good on different devices. Key techniques include:</p>
+            <ul>
+                <li><strong>Media Queries</strong>: Apply different styles based on screen size.</li>
+                <li><strong>Flexible Layouts</strong>: Use relative units like percentages and em/rem for widths.</li>
+                <li><strong>Viewport Meta Tag</strong>: Ensures proper scaling on mobile devices.</li>
+            </ul>
+            <pre>
+<code>
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+</code>
+            </pre>
+
+            <h3 id="test-yourself">Test Yourself</h3>
+            <p>Try out this quiz to check how well you understood the topic:</p>
+            <a href="CSS quiz.html" class="btn">CSS Quiz</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 WebDev Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

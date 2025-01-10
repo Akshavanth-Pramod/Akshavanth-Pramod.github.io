@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50;
+}
+
+main {
+    padding: 40px 0;
+}
+
+header.main-header {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header.main-header p {
+    font-size: 1.1rem;
+}
+
+nav.main-nav {
+    background-color: #34495e;
+}
+
+nav.main-nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav.main-nav li {
+    margin: 0 15px;
+}
+
+nav.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav.main-nav a:hover {
+    text-decoration: underline;
+}
+
+nav.main-nav .active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section h2, section h3, section h4 {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    color: #e74c3c;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+ul {
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+footer.main-footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer.main-footer p {
+    font-size: 1rem;
+}
+
+
+table tr.highlight {
+    background-color: #f0f8ff;
+}
+
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+

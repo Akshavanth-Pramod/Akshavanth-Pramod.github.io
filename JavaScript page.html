@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Essentials - WebDev Hub</title>
+    <link rel="stylesheet" href="JavaScript page.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>JavaScript Essentials</h1>
+            <p>Learn the basics of JavaScript to add interactivity to your websites.</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="HTML page.html">HTML Basics</a></li>
+                <li><a href="CSS page.html">CSS Styling</a></li>
+                <li><a href="JavaScript page.html" class="active">JavaScript Essentials</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+            <h2 style="font-size: 25px;">Table of Contents</h2>
+            <ul>
+                <li><a href="#what-is-javascript" style="text-decoration: underline;">What is JavaScript?</a></li>
+                <li><a href="#basic-syntax" style="text-decoration: underline;">Basic JavaScript Syntax</a></li>
+                <li><a href="#variables" style="text-decoration: underline;">Variables and Data Types</a></li>
+                <li><a href="#functions" style="text-decoration: underline;">Functions in JavaScript</a></li>
+                <li><a href="#events" style="text-decoration: underline;">Handling Events</a></li>
+                <li><a href="#dom-manipulation" style="text-decoration: underline;">DOM Manipulation</a></li>
+                <li><a href="#arrays" style="text-decoration: underline;">Working with Arrays</a></li>
+                <li><a href="#objects" style="text-decoration: underline;">Understanding Objects</a></li>
+                <li><a href="#quiz" style="text-decoration: underline;">Test Yourself</a></li>
+            </ul>
+        </section>
+
+        <section id="what-is-javascript" class="container">
+            <h2 style="font-size: 20px;">What is JavaScript?</h2>
+            <p>JavaScript is a versatile programming language primarily used to create dynamic and interactive experiences on the web. It runs in the browser, making it a core technology for web development alongside HTML and CSS. JavaScript can also be used for server-side programming through environments like Node.js.</p>
+        </section>
+
+        <section id="basic-syntax" class="container">
+            <h2 style="font-size: 20px;">Basic JavaScript Syntax</h2>
+            <p>Understanding JavaScript syntax is the first step to writing effective scripts. Here’s an example:</p>
+            <pre>
+<code>
+// This is a JavaScript comment
+let message = 'Hello, world!';
+console.log(message);
+</code>
+            </pre>
+            <p>The code above declares a variable and outputs its value to the console.</p>
+        </section>
+
+        <section id="variables" class="container">
+            <h2 style="font-size: 20px;">Variables and Data Types</h2>
+            <p>Variables store data values that can change over time. JavaScript supports several data types:</p>
+            <ul>
+                <li><strong>String</strong>: A sequence of characters, enclosed in single or double quotes.</li>
+                <li><strong>Number</strong>: Numeric values, such as <code>10</code> or <code>3.14</code>.</li>
+                <li><strong>Boolean</strong>: Logical values: <code>true</code> or <code>false</code>.</li>
+                <li><strong>Undefined</strong>: A variable that has been declared but not assigned a value.</li>
+                <li><strong>Null</strong>: Represents an intentional absence of any value.</li>
+            </ul>
+            <p>Example:</p>
+            <pre>
+<code>
+let name = "John"; // String
+let age = 30; // Number
+let isStudent = false; // Boolean
+</code>
+            </pre>
+        </section>
+
+        <section id="functions" class="container">
+            <h2 style="font-size: 20px;">Functions in JavaScript</h2>
+            <p>Functions are reusable blocks of code that perform specific tasks. Here’s how to define and call a function:</p>
+            <pre>
+<code>
+function greet(name) {
+    alert('Hello, ' + name + '!');
+}
+
+greet('Alice');
+</code>
+            </pre>
+            <p>Functions can also return values:</p>
+            <pre>
+<code>
+function add(a, b) {
+    return a + b;
+}
+
+let result = add(5, 3); // result is 8
+</code>
+            </pre>
+        </section>
+
+        <section id="events" class="container">
+            <h2 style="font-size: 20px;">Handling Events</h2>
+            <p>Events are user interactions with the web page, such as clicks or key presses. Use event listeners to respond to these actions:</p>
+            <pre>
+<code>
+let button = document.querySelector('button');
+button.addEventListener('click', function() {
+    alert('Button clicked!');
+});
+</code>
+            </pre>
+        </section>
+
+        <section id="dom-manipulation" class="container">
+            <h2 style="font-size: 20px;">DOM Manipulation</h2>
+            <p>JavaScript interacts with the DOM to modify HTML and CSS dynamically. Example:</p>
+            <pre>
+<code>
+let header = document.querySelector('h1');
+header.textContent = 'Welcome to JavaScript Essentials!';
+</code>
+            </pre>
+            <p>You can also add, remove, or modify elements:</p>
+            <pre>
+<code>
+let newDiv = document.createElement('div');
+newDiv.textContent = 'This is a new element';
+document.body.appendChild(newDiv);
+</code>
+            </pre>
+        </section>
+
+        <section id="arrays" class="container">
+            <h2 style="font-size: 20px;">Working with Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable. Example:</p>
+            <pre>
+<code>
+let fruits = ['Apple', 'Banana', 'Cherry'];
+console.log(fruits[0]); // Outputs: Apple
+
+fruits.push('Date'); // Adds an item to the array
+console.log(fruits);
+</code>
+            </pre>
+        </section>
+
+        <section id="objects" class="container">
+            <h2 style="font-size: 20px;">Understanding Objects</h2>
+            <p>Objects are collections of key-value pairs. Example:</p>
+            <pre>
+<code>
+let person = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+
+console.log(person.name); // Outputs: John
+person.greet(); // Outputs: Hello, John
+</code>
+            </pre>
+        </section>
+
+        <section id="quiz" class="container">
+            <h2 style="font-size: 20px;">Test Yourself</h2>
+            <p>Try out this quiz to check how well you understood the topic:</p>
+            <a href="JavaScript quiz.html" class="btn">JavaScript Quiz</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 WebDev Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
